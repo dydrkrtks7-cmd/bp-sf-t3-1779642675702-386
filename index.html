@@ -276,56 +276,89 @@ img { max-width: 100%; display: block; }
 </head>
 <body>
 
-<!-- 네비게이션 (공통) -->
-<nav class="nav">
-  <div class="nav-logo">화곡 셔츠룸</div>
-  <button class="hamburger" onclick="this.parentElement.querySelector('.nav-links').classList.toggle('show')">
-    <span></span><span></span><span></span>
-  </button>
-  <ul class="nav-links">
-    <li><a href="/">홈</a></li>
-    <li><a href="/info" class="active">정보</a></li>
-    <li><a href="/menu">메뉴</a></li>
-    <li><a href="/gallery">갤러리</a></li>
-    <li><a href="/contact">연락처</a></li>
-  </ul>
-</nav>
-
-<!-- 히어로 -->
+<main>
 <section class="hero">
-  <h1>정보</h1>
-  <p>화곡 셔츠룸 — 마포의 숨겨진 콘크리트 왕국. 거친 감성과 네온 불빛 아래에서 셔츠 한잔의 진리를 만나라.</p>
-  <div class="tagline">#화곡 #마포 #브루탈리스트 #셔츠룸카페</div>
+<h1>마포 힙플레이스 카페 거리와 화곡 셔츠룸</h1>
+<p class="tagline">화곡 지역을 처음 찾는 방문자가 궁금해할 이용 안내와 주변 정보를 한 페이지에 모았습니다.</p>
+<a class="cta-button" href="tel:02-333-7979">02-333-7979</a>
 </section>
 
-<!-- 상세 정보 섹션 -->
 <section class="section">
-  <h2 class="section-title">📍 핵심 정보</h2>
-  <div class="card-grid">
-    <div class="card">
-      <h3>위치</h3>
-      <p><span class="highlight">서울 마포구 화곡로 42길 17</span> — 골목 끝, 네온 간판이 유일한 표지판. 길 잃어도 괜찮아, 그게 더 힙함.</p>
-    </div>
-    <div class="card">
-      <h3>영업 시간</h3>
-      <p>매일 <span class="highlight">12:00 ~ 24:00</span> (라스트 오더 23:30)<br>월요일은 쉼. 닫힌 문 앞에서 "아.." 소리 듣고 싶지 않으면 외워라.</p>
-    </div>
-    <div class="card">
-      <h3>연락처</h3>
-      <p>전화: <span class="highlight">02-333-7979</span><br>인스타: @hwagok_shirtsroom<br>예약은 전화만 받는다. DM은 무시함.</p>
-    </div>
-    <div class="card">
-      <h3>주차</h3>
-      <p>주차장 없음. 주변 공영주차장 이용. 차보다 지하철을 타고 와라 — <span class="highlight">화곡역 3번 출구</span> 도보 7분.</p>
-    </div>
-  </div>
+<h2 class="section-title">이용 안내</h2>
+<p>화곡 셔츠룸은 예약제로 운영되는 경우가 많아 방문 전 연락을 통해 이용 가능 시간과 공간을 확인하는 절차가 일반적입니다. 도보권에는 힙플레이스로 알려진 카페들도 함께 위치해 있습니다. 처음 방문하는 경우라면 전화로 대략적인 위치와 주차 안내까지 함께 확인해두면 당일 이동이 한결 수월합니다.</p>
 </section>
 
-<!-- 스토리 섹션 — 브루탈리스트 감성 -->
-<section class="section" style="background: var(--bg-secondary); padding: 4rem 1.5rem;">
-  <h2 class="section-title">💥 왜 화곡 셔츠룸인가</h2>
-  <div style="max-width: 800px; margin: 0 auto; font-size: 1.05rem; color: var(--text-secondary); line-height: 1.8;">
-    <p>마포엔 수많은 카페가 있다. 예쁘고, 아기자기하고, 인스타감성 충만한 곳들. 근데 <strong>진짜</strong> 힙플레이스를 원한다면? 화곡 셔츠룸으로 와라.</p>
-    <p style="margin-top: 1.2rem;">이곳은 <span style="color: var(--accent-neon); font
+<section class="section">
+<h2 class="section-title">공간 구성 및 특징</h2>
+<div class="card-grid">
+<div class="card">
+<h3>룸 단위 구성</h3>
+<p>일행 규모에 맞춰 여러 형태의 룸 중에서 선택할 수 있는 구성입니다.</p>
+</div>
+<div class="card">
+<h3>인근 카페 거리</h3>
+<p>힙플레이스로 분류되는 카페들이 인접해 있어 이동 동선이 짧은 편입니다.</p>
+</div>
+<div class="card">
+<h3>접근성</h3>
+<p>마포 권역과 인접해 대중교통으로 접근하는 방문자가 많은 편입니다.</p>
+</div>
+<div class="card">
+<h3>결제 방식</h3>
+<p>현장 결제와 사전 결제 등 운영 방식이 매장마다 다를 수 있어 예약 시 확인이 필요합니다.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<h2 class="section-title">예약 절차</h2>
+<p class="highlight">예약은 보통 전화 문의로 시작해 인원과 시간대 확인, 최종 확정 순서로 진행됩니다.</p>
+<ol>
+<li>희망 방문 일자와 시간대를 정합니다.</li>
+<li>전화로 인원수와 함께 예약 가능 여부를 문의합니다.</li>
+<li>공간과 시간이 확정되면 방문 당일 안내에 따라 이용합니다.</li>
+</ol>
+</section>
+
+<section class="section">
+<h2 class="section-title">알아두면 좋은 용어</h2>
+<p><strong>예약제</strong>는 사전 연락을 통해 이용 시간과 공간을 확정하는 운영 방식을 말합니다. <strong>프라이빗 룸</strong>은 다른 일행과 공간이 분리된 개별 룸을 뜻합니다. <strong>연장</strong>은 기본 이용 시간 이후 추가로 시간을 늘려 이용하는 것을 가리킵니다. <strong>노쇼</strong>는 예약 후 별도 연락 없이 방문하지 않는 경우를 뜻하며, 매장에 따라 별도 안내 사항이 있을 수 있습니다.</p>
+</section>
+
+<section class="section">
+<h2 class="section-title">화곡 지역 살펴보기</h2>
+<p>화곡은 마포와 인접한 권역으로, 대중교통 노선과 도보 이동이 함께 언급되는 지역입니다. 인근 카페 상권과 함께 묶어 일정을 계획하는 경우가 흔합니다. 지역 특성상 저녁 시간대에 방문이 몰리는 편이라 여유 있게 이동 시간을 잡아두는 것이 좋습니다.</p>
+</section>
+
+<section class="section">
+<h2 class="section-title">예약 전 확인할 점</h2>
+<ul>
+<li>예약 시간과 인원 수를 미리 확정합니다.</li>
+<li>주차 가능 여부를 사전에 확인합니다.</li>
+<li>결제 수단을 확인합니다.</li>
+<li>인근 카페 방문 계획이 있다면 동선을 함께 고려합니다.</li>
+</ul>
+</section>
+
+<section class="section">
+<h2 class="section-title">궁금한 점 Q&amp;A</h2>
+<div class="faq-list">
+<div class="faq-item">
+<h3>당일 예약도 가능한가요</h3>
+<p>공간 여유에 따라 다르므로 방문 예정 시간에 맞춰 미리 전화로 확인하는 것이 안전합니다.</p>
+</div>
+<div class="faq-item">
+<h3>영업시간은 어떻게 되나요</h3>
+<p>요일에 따라 운영 시간이 달라질 수 있어 방문 전 확인이 필요합니다.</p>
+</div>
+<div class="faq-item">
+<h3>인원이 많아도 예약할 수 있나요</h3>
+<p>단체 방문은 공간 여유에 따라 달라지므로 예약 시 인원수를 정확히 전달하는 것이 좋습니다.</p>
+</div>
+</div>
+</section>
+</main>
+
+
 </body>
 </html>
