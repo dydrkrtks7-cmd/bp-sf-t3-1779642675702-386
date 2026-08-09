@@ -8,8 +8,6 @@
 <meta name="keywords" content="화곡 셔츠룸, 마포 카페 정보, 힙플레이스, 브루탈리스트, 네온 카페, 마포 핫플, 셔츠룸 카페 위치, 영업시간">
 <meta name="author" content="Brutalist Crew">
 <link rel="canonical" href="https://sf-t3-1779642675702-386.maphoshirts.xyz/">
-<meta name="bpaas-design-system" content="brutalist-avantgarde">
-<meta name="bpaas-design-theme" content="kr-neon-void">
 <!-- Open Graph -->
 <meta property="og:title" content="화곡 셔츠룸 | 정보 - 마포 힙플레이스 카페">
 <meta property="og:description" content="마포에 뜬 진짜 힙플레이스, 화곡 셔츠룸. 브루탈리스트 콘크리트 감성과 강렬한 네온, 셔츠 한잔의 파격. 상세 정보와 위치를 확인하세요.">
@@ -25,254 +23,254 @@
 <style>
 /* 핵심 디자인 시스템 — 이전 페이지와 동일 */
 :root {
-  --bg-primary: #0a0a0a;
-  --bg-secondary: #1a1a1a;
-  --text-primary: #f0f0f0;
-  --text-secondary: #b0b0b0;
-  --accent-neon: #ff0077;
-  --accent-cyan: #00f0ff;
-  --font-mono: 'Courier New', monospace;
-  --font-sans: 'Helvetica Neue', Arial, sans-serif;
-  --spacing-unit: 1rem;
-  --border-thick: 4px solid var(--accent-neon);
+ --bg-primary: #0a0a0a;
+ --bg-secondary: #1a1a1a;
+ --text-primary: #f0f0f0;
+ --text-secondary: #b0b0b0;
+ --accent-neon: #ff0077;
+ --accent-cyan: #00f0ff;
+ --font-mono: 'Courier New', monospace;
+ --font-sans: 'Helvetica Neue', Arial, sans-serif;
+ --spacing-unit: 1rem;
+ --border-thick: 4px solid var(--accent-neon);
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
-  background: var(--bg-primary);
-  color: var(--text-primary);
-  font-family: var(--font-sans);
-  line-height: 1.6;
-  overflow-x: hidden;
+ background: var(--bg-primary);
+ color: var(--text-primary);
+ font-family: var(--font-sans);
+ line-height: 1.6;
+ overflow-x: hidden;
 }
 a { color: var(--accent-cyan); text-decoration: none; }
 a:hover { text-decoration: underline; }
 img { max-width: 100%; display: block; }
 /* 네비게이션 — 햄버거 메뉴 패턴 적용 */
 .nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: var(--bg-secondary);
-  border-bottom: 2px solid var(--accent-neon);
-  padding: 0.8rem 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 999;
-  font-family: var(--font-mono);
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ background: var(--bg-secondary);
+ border-bottom: 2px solid var(--accent-neon);
+ padding: 0.8rem 1.5rem;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ z-index: 999;
+ font-family: var(--font-mono);
 }
 .nav-logo {
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: var(--accent-neon);
-  text-transform: uppercase;
-  letter-spacing: 2px;
+ font-size: 1.3rem;
+ font-weight: bold;
+ color: var(--accent-neon);
+ text-transform: uppercase;
+ letter-spacing: 2px;
 }
 .nav-links {
-  display: flex;
-  gap: 1.2rem;
-  list-style: none;
+ display: flex;
+ gap: 1.2rem;
+ list-style: none;
 }
 .nav-links a {
-  color: var(--text-primary);
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  padding: 0.3rem 0;
-  border-bottom: 2px solid transparent;
-  transition: border-color 0.2s;
+ color: var(--text-primary);
+ font-size: 0.9rem;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ padding: 0.3rem 0;
+ border-bottom: 2px solid transparent;
+ transition: border-color 0.2s;
 }
 .nav-links a:hover,
 .nav-links a.active {
-  border-bottom-color: var(--accent-neon);
+ border-bottom-color: var(--accent-neon);
 }
 /* 햄버거 버튼 (모바일) */
 .hamburger {
-  display: none;
-  flex-direction: column;
-  gap: 4px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 4px;
+ display: none;
+ flex-direction: column;
+ gap: 4px;
+ background: none;
+ border: none;
+ cursor: pointer;
+ padding: 4px;
 }
 .hamburger span {
-  display: block;
-  width: 28px;
-  height: 3px;
-  background: var(--accent-neon);
-  border-radius: 2px;
+ display: block;
+ width: 28px;
+ height: 3px;
+ background: var(--accent-neon);
+ border-radius: 2px;
 }
 @media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: var(--bg-secondary);
-    padding: 1rem;
-    border-bottom: 2px solid var(--accent-neon);
-  }
-  .nav-links.show {
-    display: flex;
-  }
-  .hamburger {
-    display: flex;
-  }
+ .nav-links {
+ display: none;
+ flex-direction: column;
+ position: absolute;
+ top: 100%;
+ left: 0;
+ width: 100%;
+ background: var(--bg-secondary);
+ padding: 1rem;
+ border-bottom: 2px solid var(--accent-neon);
+ }
+ .nav-links.show {
+ display: flex;
+ }
+ .hamburger {
+ display: flex;
+ }
 }
 /* 히어로 섹션 — 브루탈리스트 스타일 */
 .hero {
-  margin-top: 70px;
-  min-height: 60vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 3rem 1.5rem;
-  background: linear-gradient(145deg, #0d0d0d 0%, #1a1a1a 100%);
-  border-bottom: var(--border-thick);
+ margin-top: 70px;
+ min-height: 60vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ padding: 3rem 1.5rem;
+ background: linear-gradient(145deg, #0d0d0d 0%, #1a1a1a 100%);
+ border-bottom: var(--border-thick);
 }
 .hero h1 {
-  font-size: 3.5rem;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 6px;
-  color: var(--accent-neon);
-  text-shadow: 0 0 20px rgba(255,0,119,0.4);
-  margin-bottom: 0.5rem;
+ font-size: 3.5rem;
+ font-weight: 900;
+ text-transform: uppercase;
+ letter-spacing: 6px;
+ color: var(--accent-neon);
+ text-shadow: 0 0 20px rgba(255,0,119,0.4);
+ margin-bottom: 0.5rem;
 }
 .hero p {
-  font-size: 1.2rem;
-  color: var(--text-secondary);
-  max-width: 600px;
+ font-size: 1.2rem;
+ color: var(--text-secondary);
+ max-width: 600px;
 }
 .hero .tagline {
-  margin-top: 1rem;
-  font-family: var(--font-mono);
-  color: var(--accent-cyan);
-  font-size: 0.95rem;
+ margin-top: 1rem;
+ font-family: var(--font-mono);
+ color: var(--accent-cyan);
+ font-size: 0.95rem;
 }
 /* 공통 섹션 */
 .section {
-  padding: 4rem 1.5rem;
-  max-width: 1200px;
-  margin: 0 auto;
+ padding: 4rem 1.5rem;
+ max-width: 1200px;
+ margin: 0 auto;
 }
 .section-title {
-  font-size: 2.2rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  color: var(--accent-neon);
-  margin-bottom: 2rem;
-  border-left: 6px solid var(--accent-cyan);
-  padding-left: 1.2rem;
+ font-size: 2.2rem;
+ font-weight: 800;
+ text-transform: uppercase;
+ letter-spacing: 4px;
+ color: var(--accent-neon);
+ margin-bottom: 2rem;
+ border-left: 6px solid var(--accent-cyan);
+ padding-left: 1.2rem;
 }
 .card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+ gap: 2rem;
 }
 .card {
-  background: var(--bg-secondary);
-  padding: 2rem;
-  border: 1px solid #333;
-  border-radius: 0;
-  transition: border-color 0.3s, transform 0.2s;
+ background: var(--bg-secondary);
+ padding: 2rem;
+ border: 1px solid #333;
+ border-radius: 0;
+ transition: border-color 0.3s, transform 0.2s;
 }
 .card:hover {
-  border-color: var(--accent-neon);
-  transform: translateY(-4px);
+ border-color: var(--accent-neon);
+ transform: translateY(-4px);
 }
 .card h3 {
-  font-size: 1.4rem;
-  color: var(--accent-cyan);
-  margin-bottom: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+ font-size: 1.4rem;
+ color: var(--accent-cyan);
+ margin-bottom: 0.8rem;
+ text-transform: uppercase;
+ letter-spacing: 2px;
 }
 .card p {
-  color: var(--text-secondary);
-  font-size: 0.95rem;
-  line-height: 1.5;
+ color: var(--text-secondary);
+ font-size: 0.95rem;
+ line-height: 1.5;
 }
 .card .highlight {
-  color: var(--accent-neon);
-  font-weight: bold;
+ color: var(--accent-neon);
+ font-weight: bold;
 }
 /* FAQ 스타일 */
 .faq-list {
-  max-width: 800px;
-  margin: 0 auto;
+ max-width: 800px;
+ margin: 0 auto;
 }
 .faq-item {
-  border-bottom: 1px solid #333;
-  padding: 1.2rem 0;
+ border-bottom: 1px solid #333;
+ padding: 1.2rem 0;
 }
 .faq-item h4 {
-  font-size: 1.1rem;
-  color: var(--text-primary);
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+ font-size: 1.1rem;
+ color: var(--text-primary);
+ cursor: pointer;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
 }
 .faq-item h4::after {
-  content: '+';
-  font-size: 1.4rem;
-  color: var(--accent-neon);
-  transition: transform 0.2s;
+ content: '+';
+ font-size: 1.4rem;
+ color: var(--accent-neon);
+ transition: transform 0.2s;
 }
 .faq-item.active h4::after {
-  transform: rotate(45deg);
+ transform: rotate(45deg);
 }
 .faq-item p {
-  margin-top: 0.8rem;
-  color: var(--text-secondary);
-  display: none;
+ margin-top: 0.8rem;
+ color: var(--text-secondary);
+ display: none;
 }
 .faq-item.active p {
-  display: block;
+ display: block;
 }
 /* CTA */
 .cta-section {
-  background: var(--bg-secondary);
-  text-align: center;
-  padding: 3rem 1.5rem;
-  border-top: var(--border-thick);
-  border-bottom: var(--border-thick);
+ background: var(--bg-secondary);
+ text-align: center;
+ padding: 3rem 1.5rem;
+ border-top: var(--border-thick);
+ border-bottom: var(--border-thick);
 }
 .cta-button {
-  display: inline-block;
-  background: var(--accent-neon);
-  color: var(--bg-primary);
-  padding: 1rem 2.5rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  border: none;
-  cursor: pointer;
-  transition: 0.2s;
-  font-size: 1.1rem;
+ display: inline-block;
+ background: var(--accent-neon);
+ color: var(--bg-primary);
+ padding: 1rem 2.5rem;
+ font-weight: bold;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ border: none;
+ cursor: pointer;
+ transition: 0.2s;
+ font-size: 1.1rem;
 }
 .cta-button:hover {
-  background: var(--accent-cyan);
-  color: #000;
+ background: var(--accent-cyan);
+ color: #000;
 }
 /* 푸터 */
 .footer {
-  padding: 2rem 1.5rem;
-  text-align: center;
-  color: var(--text-secondary);
-  font-size: 0.85rem;
-  border-top: 1px solid #222;
+ padding: 2rem 1.5rem;
+ text-align: center;
+ color: var(--text-secondary);
+ font-size: 0.85rem;
+ border-top: 1px solid #222;
 }
 </style>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+ <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 <body>
 
